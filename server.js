@@ -60,6 +60,9 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+server.listen(PORT, '0.0.0.0', () => {
+  const addr = server.address();
+  const host = addr.address === '::' ? 'localhost' : addr.address;
+  console.log(`Server running at http://localhost:${addr.port}/`);
+  console.log(`Network:      http://${host}:${addr.port}/`);
 });
