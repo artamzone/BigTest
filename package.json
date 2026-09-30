@@ -1,0 +1,15 @@
+{
+  "name": "bigtest",
+  "version": "1.0.0",
+  "description": "Vue 3 Todo List served via local HTTP server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "artamzone",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
