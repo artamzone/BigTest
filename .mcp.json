@@ -26,6 +26,20 @@
         "Authorization": "Bearer ctx7sk-093d575b-7878-4bb6-b562-82cab58cedae"
       },
       "directTools": true
+    },
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp",
+        "--host=45.144.235.48",
+        "--port=22",
+        "--user=root",
+        "--key=/c/Users/user/.ssh/id_ed25519",
+        "--timeout=1300000",
+        "--maxChars=none"
+      ],
+      "directTools": false
     }
   }
 }
