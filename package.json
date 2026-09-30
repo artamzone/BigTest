@@ -1,14 +1,20 @@
 {
   "name": "bigtest",
   "version": "1.0.0",
-  "description": "Vue 3 Todo List served via local HTTP server",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "artamzone",
-  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1",
+    "vite": "^6.0"
+  },
   "engines": {
     "node": ">=18"
   }
