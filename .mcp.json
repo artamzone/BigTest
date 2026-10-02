@@ -1,32 +1,5 @@
 {
   "mcpServers": {
-    "ai-wormsoft": {
-      "type": "http",
-      "url": "https://ai.wormsoft.ru/api/mcp",
-      "headers": {
-        "Authorization": "Bearer 278a95c7a59ca385b1c311715a6b1643b8a4663fab09f3a53a1d2bb1ae79a7dc"
-      },
-      "directTools": [
-        "web_search",
-        "web_fetch"
-      ]
-    },
-    "chrome-devtools": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "chrome-devtools-mcp@latest",
-        "--browser-url=http://127.0.0.1:9222"
-      ],
-      "directTools": true
-    },
-    "context7": {
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ctx7sk-093d575b-7878-4bb6-b562-82cab58cedae"
-      },
-      "directTools": true
-    },
     "ssh-mcp": {
       "command": "npx",
       "args": [
@@ -35,7 +8,7 @@
         "--host=45.144.235.48",
         "--port=22",
         "--user=root",
-        "--key=/c/Users/user/.ssh/id_ed25519",
+        "--key=C:/Users/user/.ssh/id_ed25519",
         "--timeout=1300000",
         "--maxChars=none"
       ],
